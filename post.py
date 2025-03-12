@@ -11,6 +11,7 @@ class Post:
         self.title = all_posts[self.id]["title"]
         self.subtitle = all_posts[self.id]["subtitle"]
         self.body = all_posts[self.id]["body"]
+        self.image = "post-bg" + (str("-" + id) if id is not None else "") + ".jpg"
 
         # print(f"self.title = {self.title}")
         # print(f"self.subtitle = {self.subtitle}")
