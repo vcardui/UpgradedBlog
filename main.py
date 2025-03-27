@@ -17,7 +17,7 @@
 # Jinja Template Designer Documentation: https://jinja.palletsprojects.com/en/stable/templates/
 
 # ------------------------- Libraries -------------------------
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 import requests
 from post import Post
 
@@ -37,17 +37,14 @@ def home():
 def about():
     return render_template("about.html")
 
-@app.route('/contact.html')
+@app.route('/contact.html', methods=["GET","POST"])
 def contact():
-    return render_template("contact.html")
-
-@app.route('/footer.html')
-def footer():
-    return render_template("footer.html")
-
-@app.route('/header.html')
-def header():
-    return render_template("header.html")
+    if request.method == "POST":
+        data = request.form
+        # print(data)
+        return render_template("contact.html", title="Successfully returned message")
+    else:
+        return render_template("contact.html", title="Contact Me")
 
 @app.route('/blog/<id>')
 def post(id):
