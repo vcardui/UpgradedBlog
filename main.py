@@ -8,7 +8,7 @@
 # +----------------------------------------------------------------------------+
 # | Author.......: Vanessa Reteguín <vanessa@reteguin.com>
 # | First release: January 9th, 2025
-# | Last update..: January 18th, 2025
+# | Last update..: March 27th, 2025
 # | WhatIs.......: Cardui Web Development (Upgraded Blog) - Main
 # +----------------------------------------------------------------------------+
 
