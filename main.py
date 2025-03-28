@@ -19,7 +19,9 @@
 # ------------------------- Libraries -------------------------
 from flask import Flask, render_template, request
 import requests
+
 from post import Post
+from carduiBot import EmailBot
 
 # ------------------------- Variables -------------------------
 app = Flask(__name__)
@@ -48,8 +50,9 @@ def contact():
 
 @app.route('/blog/<id>')
 def post(id):
-    chosenPost = Post(id)
-    return render_template("post.html", post=chosenPost)
+    ChosenPost = Post(id)
+    return render_template("post.html", post=ChosenPost)
+
 
 if __name__ == "__main__":
     app.run(debug=True)
