@@ -15,11 +15,28 @@
 # ------------ Resources / Documentation involved -------------
 
 # ------------------------- Libraries -------------------------
-import requests
+import smtplib
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
 
 # ------------------------- Variables -------------------------
+carduibotEmail = "carduibot@gmail.com"
+carduibotPassword = ""
+
+myEmail = "vanessa@reteguin.com"
 
 # -------------------------- Class ----------------------------
 class EmailBot:
     def __init__(self):
         self.feeling = "good"
+
+    def sendMail(self):
+        # Send message with smtplib
+
+        connection = smtplib.SMTP("smtp.gmail.com")
+        connection.starttls()
+        connection.login(user=carduibotEmail, password=carduibotPassword)
+        connection.sendmail(from_addr=carduibotEmail,
+                            to_addrs=myEmail,
+                            msg="<h1>Holaaaaa! Esto es un prueba de una Manessa medio dormida :)</h1>")
+        connection.close()
