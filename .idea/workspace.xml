@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9665ca46-a6a7-49ff-a14d-976037b6402f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/carduiBot.py" afterDir="false" />
+    <list default="true" id="9665ca46-a6a7-49ff-a14d-976037b6402f" name="Changes" comment="Added HTML mail test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carduiBot.py" beforeDir="false" afterPath="$PROJECT_DIR$/carduiBot.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,13 +113,22 @@
       <option name="project" value="LOCAL" />
       <updated>1743116696148</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added HTML mail test">
+      <option name="closed" value="true" />
+      <created>1743134040578</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1743134040578</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="New: contact form now works! " />
     <MESSAGE value="New: contact form now works! " />
     <MESSAGE value="Deleted unnecessary files :/" />
-    <option name="LAST_COMMIT_MESSAGE" value="Deleted unnecessary files :/" />
+    <MESSAGE value="Added HTML mail test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added HTML mail test" />
   </component>
 </project>
